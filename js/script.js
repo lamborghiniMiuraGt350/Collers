@@ -36,8 +36,7 @@ window.addEventListener('scroll', function () {
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    loop: true,
-    slidesPerView: 3.3, // показывает 3 слайда одновременно
+    loop: true,// показывает 3 слайда одновременно
     // Navigation arrows
     navigation: {
         nextEl: '.slider-next',
@@ -46,13 +45,25 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
         // когда ширина окна >= 480px
         480: {
-            slidesPerView: 1,
+          slidesPerView: 1,
         },
         // когда ширина окна >= 768px
-        992: {
-            slidesPerView: 2,
+        768: {
+          slidesPerView: 2,
+        },
+        // когда ширина окна >= 1024px
+        1024: {
+          slidesPerView: 2,
+        },
+        // когда ширина окна >= 1440px
+        1440: {
+          slidesPerView: 3.3,
         }
-    }
+      },
+      freeMode: {
+        enabled: true,
+        sticky: false, // отключает "прилипающее" поведение
+      },
 });
 
 //__________________________________________________

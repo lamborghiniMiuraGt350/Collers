@@ -117,7 +117,7 @@ body {
     justify-content: space-between;
     gap: 1.25rem;
 
-    @media (max-width:767.98px) {
+    @media (max-width:47.9988em) {
         min-height: 4.1875rem;
     }
 }
@@ -224,6 +224,7 @@ body {
 
     @media (max-width:61.9988em) {
         flex-direction: column;
+        row-gap: 2rem;
     }
 }
 
@@ -231,7 +232,7 @@ body {
     max-width: 44.625rem;
     display: flex;
     flex-direction: column;
-    gap: 1.875rem;
+    gap: 2rem;
 
     @media (max-width:61.9988em) {
         text-align: center;
@@ -258,6 +259,10 @@ body {
     display: flex;
     align-items: center;
     gap: 1.625rem;
+
+    @media (max-width:47.9988em) {
+        gap: 1rem;
+    }
 }
 
 .hero-button {
@@ -320,6 +325,10 @@ body {
         @media (max-width:61.9988em) {
             bottom: -100%;
         }
+
+        @media (max-width:47.9988em) {
+            bottom: -140%;
+        }
     }
 }
 
@@ -328,7 +337,7 @@ body {
 .services-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
-    row-gap: 1.875rem;
+    row-gap: 2rem;
     @include av('column-gap', 80, 40, 1);
 
 }
@@ -337,6 +346,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.9375rem;
+
+    @media (max-width:47.9988em) {
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .services-item-icon {}
@@ -412,6 +426,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width:47.9988em) {
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
 .cards-title {}
@@ -425,7 +445,7 @@ body {
 
 .cards-button {
     border: 0.125rem solid #fff;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     padding: 1.25rem 3rem;
     font-weight: 700;
     font-size: 1.5rem;
@@ -515,7 +535,7 @@ body {
 }
 
 .item-button {
-    margin-top: 32px;
+    margin-top: 2rem;
     display: flex;
     gap: 1rem;
     border: 0.125rem solid #fff;
@@ -566,6 +586,10 @@ body {
     @media (max-width:61.9988em) {
         flex-direction: column;
     }
+
+    @media (max-width:47.9988em) {
+        row-gap: 2rem;
+    }
 }
 
 .video-content {
@@ -582,10 +606,19 @@ body {
     @media (max-width:61.9988em) {
         padding-left: 0;
     }
+
+    @media (max-width:47.9988em) {
+        padding: 1rem;
+    }
 }
 
 .video-title {
     color: #0f172a;
+
+    @media (max-width:47.9988em) {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
 
@@ -608,6 +641,10 @@ body {
         left: 0;
         background: url('../img/video-block/check.svg')left no-repeat;
     }
+
+    @media (max-width:47.9988em) {
+        font-size: 1rem;
+    }
 }
 
 .video-button {
@@ -620,14 +657,18 @@ body {
     line-height: 150%;
     letter-spacing: 0.03em;
     color: #78350f;
-    border: 2px solid #78350f;
-    border-radius: 8px;
+    border: 0.125rem solid #78350f;
+    border-radius: 0.5rem;
     transition: all 0.5s ease;
     padding: 1rem 2rem;
 
     &:hover {
         background-color: #78350f;
         color: white;
+    }
+
+    @media (max-width:47.9988em) {
+        align-self: center;
     }
 }
 
@@ -665,12 +706,15 @@ body {
 
 .grow-header {
     @include av(' padding-bottom', 80, 30, 1);
-
 }
 
 .grow-title {
     color: #0f172a;
     margin-bottom: 2rem;
+
+    @media (max-width:47.9988em) {
+        text-align: center;
+    }
 }
 
 .grow-text {
@@ -682,7 +726,7 @@ body {
 .grow-row {
     display: flex;
     column-gap: 3.125rem;
-    row-gap: 2.5rem;
+    row-gap: 2rem;
 
     @media (max-width:61.9988em) {
         flex-direction: column;
@@ -693,7 +737,7 @@ body {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 3rem;
     @include av('gap', 48, 20, 1);
 
 }
@@ -793,6 +837,10 @@ body {
     @media (max-width:61.9988em) {
         top: 55%;
     }
+
+    @media (max-width:47.9988em) {
+        top: 60%;
+    }
 }
 
 .map-number {
@@ -802,6 +850,10 @@ body {
     text-align: center;
     color: #fffbeb;
     margin-bottom: 0.625rem;
+
+    @media (max-width:47.9988em) {
+        font-size: 3rem;
+    }
 }
 
 .map-text {
@@ -810,13 +862,17 @@ body {
     line-height: 110%;
     text-align: center;
     color: #fffbeb;
+
+    @media (max-width:47.9988em) {
+        font-size: 2rem;
+    }
 }
 
 //____________________
 
 .collectors {
     position: relative;
-    @include av('padding-top', 80, 0, 1);
+    @include av('padding-top', 80, 30, 1);
     @include av('padding-bottom', 80, 30, 1);
 
     &::after {
@@ -838,6 +894,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width:47.9988em) {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
 }
 
 .collectors-title {
@@ -861,7 +922,7 @@ body {
 
 .grow-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -969,6 +1030,11 @@ body {
     align-items: center;
     justify-content: space-between;
     @include av('margin-bottom', 80, 30, 1);
+
+    @media (max-width:47.9988em) {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
 }
 
 .events-title {
@@ -1070,6 +1136,11 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 1.25rem;
+
+    @media (max-width:47.9988em) {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
 }
 
 .today-title {
@@ -1087,7 +1158,7 @@ body {
     color: #fff;
     padding: 1.25rem 3rem;
     border: 0.125rem solid #fff;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.3s ease;
     background-color: transparent;
 
@@ -1095,10 +1166,12 @@ body {
         background-color: white;
         color: #0f172a;
     }
+
     @media (max-width:61.9988em) {
         padding: 0.9375rem 1.5rem;
     }
 }
+
 //____________________________________________________________________________________________________________________________________________
 .footer {
     background: #0f172a;
@@ -1115,13 +1188,26 @@ body {
     @include av('padding-bottom', 48, 20, 1);
     display: flex;
     @include av('gap', 222, 0, 1);
-    
+
+    @media (max-width:47.9988em) {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
 }
 
 .footer-left {
     display: flex;
     flex: 1 1 auto;
     justify-content: space-between;
+
+    @media (max-width:47.9988em) {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .footer-column {}
@@ -1132,12 +1218,33 @@ body {
     line-height: 110%;
     color: #fff;
     margin-bottom: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+
+    &._active {
+        svg {
+            transform: rotate(-90deg);
+        }
+    }
+
+    @media (max-width:47.9988em) {
+        margin-left: 0.9375rem;
+    }
+
+    @media (min-width:47.9988em) {
+
+        svg {
+            display: none;
+        }
+    }
 }
 
 .footer-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    li:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
 
     a {
         color: #e2e8f0;
@@ -1150,8 +1257,17 @@ body {
 
 .footer-right {
     justify-self: end;
+
     @media (max-width:61.9988em) {
         margin-right: -6.25rem;
+    }
+
+    @media (max-width:47.9988em) {
+        margin: 0;
+    }
+
+    @media (max-width:47.9988em) {
+        text-align: center;
     }
 }
 
@@ -1165,15 +1281,27 @@ body {
 
 .footer-actions {
     margin-bottom: 3.5rem;
+
+    @media (max-width:47.9988em) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
 }
 
 .footer-apps {
-    display: block;
-
     &:not(:last-child) {
         margin-bottom: 0.6875rem;
     }
-    
+
+    @media (max-width:47.9988em) {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 .footer-socials-name {
@@ -1181,21 +1309,26 @@ body {
     font-size: 1rem;
     line-height: 110%;
     color: #e2e8f0;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .footer-socials {
     display: flex;
     gap: 1rem;
+
     @media (max-width:61.9988em) {
         display: inline-flex;
     }
+
 }
 
 .footer-social-link {
-    svg{transition: all 0.3s ease;}
-    &:hover{
-        svg{
+    svg {
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        svg {
             transform: scale(1.1);
         }
     }
@@ -1206,6 +1339,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width:47.9988em) {
+        flex-direction: column;
+        gap: 2.3125rem;
+        padding-bottom: 3rem;
+    }
 }
 
 .footer-copy {
@@ -1240,8 +1379,7 @@ body {
 
 
 .love {
-    padding: 80px 0;
-    @include av('padding-top', 80, 0, 1);
+    @include av('padding-top', 80, 30, 1);
     @include av(' padding-bottom', 80, 30, 1);
 }
 
@@ -1258,6 +1396,13 @@ body {
         margin-left: -2.5rem;
         margin-right: -2.5rem;
         height: 26.3125rem;
+        height: 70%;
+
+        @media (max-width:47.9988em) {
+            margin: 0;
+            width: 100%;
+            height: 70%;
+        }
     }
 }
 
@@ -1266,17 +1411,28 @@ body {
     align-items: center;
     justify-content: space-between;
     @include av('margin-bottom', 80, 30, 1);
-    
+
+    @media (max-width:47.9988em) {
+        justify-content: center;
+    }
 }
 
 .love-title {
     color: #0f172a;
+
+    @media (max-width:47.9988em) {
+        text-align: center;
+    }
 }
 
 .arrows {
     position: static;
     display: flex;
     gap: 1.5rem;
+
+    @media (max-width:47.9988em) {
+        display: none;
+    }
 }
 
 .swiper-button-prev {}
@@ -1336,7 +1492,7 @@ body {
 .slide-item {
     border: 0.0625rem solid #e2e8f0;
     border-radius: 1.25rem;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.07), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.375rem 0 rgba(0, 0, 0, 0.07), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     background: #fff;
     padding: 2rem;
     display: flex;
@@ -1353,6 +1509,10 @@ body {
     font-size: 1.5rem;
     line-height: 110%;
     color: #475569;
+
+    @media (max-width:47.9988em) {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .slide-text {
@@ -1363,6 +1523,12 @@ body {
     margin-bottom: 2rem;
     flex: 1 1 auto;
     max-width: 20rem;
+
+    @media (max-width:47.9988em) {
+        margin-bottom: 1.5rem;
+        max-width: none;
+        font-size: 1rem;
+    }
 }
 
 .slide-author {
